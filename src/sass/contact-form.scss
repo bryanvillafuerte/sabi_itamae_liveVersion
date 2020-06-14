@@ -1,0 +1,36 @@
+@import './variables';
+
+form {
+  margin-top: 2rem;
+  font-family: $font-face1;
+
+  .form-control {
+    border-radius: 0;
+  }
+
+  button, .btn, .btn-primary {
+    width: 250px;
+    border: solid 2px;
+    border-color: $color-secondary-default;
+    background-color: $color-dark-default;
+    border-radius: 0;
+    color: $color-secondary-default;
+    transition: all linear .2s;
+
+    &:hover {
+      background-color: $color-secondary-default;
+      border-color: $color-secondary-default;
+      color: $color-light-default;
+    }
+
+    &:focus {
+      background-color: $color-secondary-default;
+      color: $color-light-default;
+    }
+
+    &:active {
+      background-color: $color-secondary-default;
+      color: $color-light-default;  
+    }
+  }
+}

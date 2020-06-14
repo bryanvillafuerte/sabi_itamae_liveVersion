@@ -1,0 +1,36 @@
+@import './variables';
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font-face1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100vw;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+  background: -webkit-linear-gradient(bottom, rgba(19, 19, 19, 0.7), rgba(19, 19, 19, 0.7)), url(../images/sushi-background.png) repeat bottom; content: "";
+  color: $color-light-default;
+
+  .app-container {
+    width: 100vw;
+    -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+
+    .cookieConsent {
+      width: 80%;
+
+      @media (min-width: 768px) {
+        div {
+          text-align: left;
+        }
+      }
+    }
+  }
+}

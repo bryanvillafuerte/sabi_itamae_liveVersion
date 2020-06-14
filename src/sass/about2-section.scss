@@ -1,0 +1,130 @@
+@import './variables';
+
+.about2-section-container {
+  width: 100vw;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+  padding-bottom: 5rem;
+  padding-top: 3rem;
+
+  .about2-title-container {
+    padding-bottom: 2rem;
+
+    h1 {
+      color: $color-primary-default;
+      font-family: $font-face2;
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
+  
+    h4 {
+      color: $color-light-default;
+      font-family: $font-face1;
+      font-weight: 200;
+      margin: 0;
+      letter-spacing: 1px;
+    }
+  }
+
+  .about2-image-container {
+    -webkit-box-shadow: $shadow;
+         -moz-box-shadow: $shadow;
+              box-shadow: $shadow;
+
+    img {
+      width: 100%;
+      -webkit-box-shadow: $shadow;
+         -moz-box-shadow: $shadow;
+              box-shadow: $shadow;
+    }
+  }
+
+  .about2-text-container {
+    .divider {
+      height: 1rem;
+      width: 250px;
+      background-color: $color-secondary-default;
+      -webkit-box-shadow: $shadow;
+      -moz-box-shadow: $shadow;
+      box-shadow: $shadow;
+      margin-left: -1rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .lead {
+      color: $color-light-default;
+      font-family: $font-face1;
+      font-weight: 200;
+      margin: 0;
+      letter-spacing: 1px;
+      font-size: 16px;
+    }
+  }
+
+  .about2-text2-container {
+    background: $color-light-default;
+    padding: 2rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    -webkit-box-shadow: $shadow;
+         -moz-box-shadow: $shadow;
+              box-shadow: $shadow;
+
+    .lead {
+      color: $color-dark-default;
+      font-family: $font-face1;
+      font-weight: 200;
+      margin: 0;
+      letter-spacing: 1px;
+      font-size: 16px;
+    }
+  }
+
+  .about2-image2-container {
+    height: 450px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      -webkit-box-shadow: $shadow;
+         -moz-box-shadow: $shadow;
+              box-shadow: $shadow;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .about2-text-container {
+      padding-top: 3rem;
+
+      .divider {
+        width: 450px;
+        margin-left: -10rem;
+      }
+
+      .lead {
+        position: absolute;
+        font-size: 20px;
+      }
+    }
+
+    .about2-text2-container {
+      margin-left: 5rem;
+      margin-right: -5rem;
+
+      .lead {
+        font-size: 20px;
+      }
+    }
+
+    .about2-image2-container {
+      margin-top: -2rem;
+      padding: 1rem;
+      padding-left: 10rem;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@import './variables';
+
+.footer-container {
+  background: $color-dark-default;
+  padding-top: 1rem;
+  letter-spacing: 2px;
+
+  span {
+    font-family: $font-face2;
+    font-weight: 700;
+    color: #D99A4E;
+  }
+}

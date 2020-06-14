@@ -1,0 +1,115 @@
+@import './variables';
+
+.chef-section-container {
+  width: 100vw;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+
+  .chef-title {
+    color: $color-primary-default;
+    font-family: $font-face2;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+
+  .chef-text {
+    font-family: $font-face1;
+    font-weight: 200;
+    letter-spacing: 1px;
+    font-size: 16px;
+  }
+
+  .chef-text2 {
+    font-family: $font-face1;
+    font-weight: 200;
+    letter-spacing: 1px;
+    font-size: 16px;
+    padding-top: 2rem;
+  }
+
+  .chef-image-container {
+    background: $color-tertiary-default;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    height: 300px;
+
+    img {
+      position: absolute;
+      width: 85%;
+      margin-top: -6rem;
+      -webkit-box-shadow: $shadow;
+         -moz-box-shadow: $shadow;
+              box-shadow: $shadow;
+    }
+
+    .chef-name {
+      padding-bottom: 1rem;
+      position: absolute;
+      z-index: 11;
+      bottom: 10px;
+
+      h3 {
+        font-family: $font-face2;
+        font-weight: 500;
+        margin-bottom: 0;
+        letter-spacing: 1px;
+        padding: 0;
+        -webkit-text-shadow: $shadow;
+         -moz-text-shadow: $shadow;
+              text-shadow: $shadow;
+      }
+  
+      .divider {
+        height: 1rem;
+        width: 150px;
+        background-color: $color-secondary-default;
+        -webkit-box-shadow: $shadow;
+        -moz-box-shadow: $shadow;
+        box-shadow: $shadow;
+  
+        hr {
+          padding: 0;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .chef-text {
+      font-size: 20px;
+    }
+
+    .chef-text2 {
+      padding-top: 1rem;
+      font-size: 20px;
+    }
+
+    .chef-image-container {
+      height: 480px;
+      margin-top: 5rem;
+
+      img {
+        position: absolute;
+        margin-top: -8rem;
+      }
+
+      .chef-name {
+        position: absolute;
+        z-index: 11;
+        right: 30px;
+        top: 80px;
+
+        .divider {
+          width: 150px;
+        }
+      }
+    }
+  }
+}

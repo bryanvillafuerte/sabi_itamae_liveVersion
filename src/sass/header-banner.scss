@@ -1,0 +1,156 @@
+@import './variables';
+
+.header-banner-container {
+  width: 100vw;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+  padding: 0;
+  background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, 1)), url(../images/sushi-slicing.gif) no-repeat center; content: "";
+  background-size: cover;
+  
+
+  .banner-inner-container {
+    padding: 0;
+
+    .header-banner-title {
+      height: 70vh;
+      padding: 1rem;
+      padding-bottom: 2rem;
+  
+      .main-title {
+        font-family: $font-face2;
+        color: $color-primary-default;
+        margin: 0;
+        font-weight: 500;
+        letter-spacing: 1px;
+      }
+  
+      .sub-title {
+        font-family: $font-face1;
+        font-weight: 200;
+        margin: 0;
+        letter-spacing: 1px;
+      }
+
+      button, .btn, .btn-primary {
+        width: 250px;
+        border: solid 2px;
+        border-color: $color-secondary-default;
+        background-color: $color-dark-default;
+        border-radius: 0;
+        margin-top: 1rem;
+        color: $color-secondary-default;
+        transition: all linear .2s;
+    
+        &:hover {
+          background-color: $color-secondary-default;
+          color: $color-light-default;
+        }
+    
+        &:focus {
+          background-color: $color-secondary-default;
+          color: $color-light-default;
+        }
+    
+        &:active {
+          background-color: $color-secondary-default;
+          color: $color-light-default;  
+        }
+      }
+
+      @media (min-width: 768px) {
+        .header-banner-title {
+          height: 80vh;
+        }
+
+        button {
+          display: none;
+        }
+      }
+    }
+  
+    .header-banner-body {
+      padding: 0;
+      padding-bottom: 3rem;
+  
+      .header-banner-image {
+        padding: 0;
+        height: 50vh;
+        overflow: hidden;
+        -webkit-box-shadow: $shadow;
+        -moz-box-shadow: $shadow;
+        box-shadow: $shadow;
+  
+        img {
+          height: 100%;
+        }
+      }
+
+      .header-banner-text {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-top: -5rem;
+
+        .lead {
+          background: $color-dark-default;
+          -webkit-box-shadow: $shadow;
+          -moz-box-shadow: $shadow;
+          box-shadow: $shadow;
+
+          p {
+            padding: 2rem;
+            font-family: $font-face1;
+            font-weight: 200;
+            letter-spacing: 1px;
+            font-size: 16px;
+          }
+        }
+      }
+
+      hr {
+        margin: 0;
+        margin-top: -.5rem;
+        padding: 0;
+        height: 1rem;
+        width: 60%;
+        background-color: $color-secondary-default;
+        -webkit-box-shadow: $shadow;
+        -moz-box-shadow: $shadow;
+        box-shadow: $shadow;
+      }
+
+      @media (min-width: 768px) {
+        .header-banner-image {
+          padding: 0;
+          height: 50vh;
+          overflow: hidden;
+    
+          img {
+            height: 120%;
+          }
+        } 
+
+        .header-banner-text {
+          padding-left: 0;
+          padding-right: 0;
+          margin-top: 5rem;
+          margin-left: -3rem;
+
+          .lead {
+            height: 27rem;
+
+            p {
+              font-size: 20px;
+            }
+          }
+        }
+
+        hr {
+          margin-top: -3rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,130 @@
+@import './variables';
+
+.contact-heading-container {
+  padding-bottom: 3rem;
+
+  .logo-image {
+    width: 200px;
+    margin-bottom: 2rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .lead {
+    color: $color-light-default;
+    font-family: $font-face1;
+    font-weight: 200;
+    margin: 0;
+    letter-spacing: 1px;
+    font-size: 16px;
+    margin-bottom: 3rem;
+  }
+
+  button, .btn, .btn-primary {
+    width: 250px;
+    border: solid 2px;
+    border-color: $color-secondary-default;
+    background-color: $color-dark-default;
+    border-radius: 0;
+    color: $color-secondary-default;
+    transition: all linear .2s;
+
+    &:hover {
+      background-color: $color-secondary-default;
+      color: $color-light-default;
+    }
+
+    &:focus {
+      background-color: $color-secondary-default;
+      color: $color-light-default;
+    }
+
+    &:active {
+      background-color: $color-secondary-default;
+      color: $color-light-default;  
+    }
+  }
+
+  @media (min-width: 768px) {
+    .lead {
+      font-size: 20px;
+    }
+  }
+}
+
+.contact-body-container {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  
+  .contact-column {
+    padding-bottom: 3rem;
+  }
+
+  .content2 {
+    margin-top: 5rem;
+
+    p {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      margin-left: 1rem;
+    }
+  }
+
+  .content1 {
+    p {
+      margin-bottom: 1rem;
+      margin-left: 1rem;
+    }
+
+    a {
+      margin-top: 1rem;
+      margin-right: 2rem;
+      font-size: 42px;
+      color: $color-light-default;
+      transition: all linear .2s;
+
+      &:hover {
+        color: $color-primary-default;
+      }
+    }
+  }
+
+  h4 {
+    color: $color-light-default;
+    font-family: $font-face2;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+
+  .lead {
+    color: $color-light-default;
+    font-family: $font-face1;
+    font-weight: 200;
+    margin: 0;
+    letter-spacing: 1px;
+    font-size: 16px;
+  }
+
+  .divider {
+    height: .5rem;
+    width: 90%;
+    background-color: $color-secondary-default;
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    box-shadow: $shadow;
+  }
+
+  .map {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  @media (min-width: 768px) {
+    .lead {
+      font-size: 20px;
+    }
+  }
+}
+

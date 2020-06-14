@@ -1,0 +1,59 @@
+@import './variables';
+
+.navbar {
+  width: 100vw;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: $font-face1;
+  background-color: rgba(0, 0, 0, 0.6);
+
+  button {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar-brand {
+    width: 90px;
+    
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .active {
+    border-bottom: 2px solid $color-primary-default;
+  }
+
+  @media (min-width: 768px) {
+    .navbar-brand {
+      width: 200px;
+      padding-left: 1rem;
+    }
+  }
+
+  .nav-link {
+    transition: all linear .2s;
+
+    &:hover {
+      color: $color-primary-default !important;
+    }
+  }
+}
+
+.modal {
+  .modal-content {
+    border-radius: 0;
+
+    h5 {
+      color: $color-dark-default;
+    }
+
+    .embed-responsive {
+      height: 60vh;
+    }
+  }
+}
