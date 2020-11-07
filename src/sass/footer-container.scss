@@ -9,5 +9,15 @@
     font-family: $font-face2;
     font-weight: 700;
     color: #D99A4E;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: all linear .2s;
+
+      &:hover {
+        color: #f7bc75;
+      }
+    }
   }
 }

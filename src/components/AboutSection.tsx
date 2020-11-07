@@ -70,7 +70,7 @@ function AboutSection() {
                   <p className="lead">Dessverre kan ikke sabi itamae-menyen tilpasses for personer som er allergiske mot sjømat</p>
                 </ScrollAnimation>
                 <ScrollAnimation animateIn='fadeInUp' duration={1} animateOnce={true}>
-                  <p className="lead">En komplett matmeny på Itamae koster <span>kr 1100,-</span> per person. Med tilpasset drikke (med og uten alkohol) <span>kr 1600,-</span> per person.</p>
+                  <p className="lead">En komplett matmeny på Itamae koster <span>kr 1200,-</span> per person. Med tilpasset drikke (med og uten alkohol) <span>kr 1600,-</span> per person.</p>
                 </ScrollAnimation>
               </div>
             </Col>
