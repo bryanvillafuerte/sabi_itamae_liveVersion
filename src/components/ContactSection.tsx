@@ -3,7 +3,6 @@ import { Container, Row, Col, Image, Button, Modal, ResponsiveEmbed } from 'reac
 import '../sass/contact-section.scss'
 import ScrollAnimation from 'react-animate-on-scroll';
 import LogoImage from '../images/sabi-final-dark_1.png';
-import ContactForm from './ContactForm'
 
 function ContactSection() {
   const [modalShow, setModalShow] = React.useState(false);
@@ -53,17 +52,6 @@ function ContactSection() {
                 </p>
               </ScrollAnimation>
             </div>
-            <div className='content2'>
-              <ScrollAnimation animateIn='fadeIn' animateOnce={true}>
-                <h4>ÅPNINGSTIDER</h4>
-                <div className='divider'>
-                  <hr />
-                </div>
-                <p className='lead'>onsdag-fredag: Kl 17.00 - 23.00</p>
-                <p className='lead'>lørdag: Kl 17.00 - 23.00</p>
-                <p className='lead'>søndag: Kl 17.00 - 23.00</p>
-              </ScrollAnimation>
-            </div>
           </Col>
           <Col md={6} className='contact-column'>
             <div className='content1'>
@@ -80,11 +68,13 @@ function ContactSection() {
             </div>
             <div className='content2'>
               <ScrollAnimation animateIn='fadeIn' animateOnce={true}>
-                <h4>VI VIL GJERNE HØRE DINE TILBAKEMELDINGER</h4>
+                <h4>ÅPNINGSTIDER</h4>
                 <div className='divider'>
                   <hr />
                 </div>
-                <ContactForm />
+                <p className='lead'>onsdag-fredag: Kl 17.00 - 23.00</p>
+                <p className='lead'>lørdag: Kl 17.00 - 23.00</p>
+                <p className='lead'>søndag: Kl 17.00 - 23.00</p>
               </ScrollAnimation>
             </div>
           </Col>

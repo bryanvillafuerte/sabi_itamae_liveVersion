@@ -18,7 +18,7 @@ const schema = yup.object().shape({
 
 function ContactForm() {
   const { register, handleSubmit, errors } = useForm({
-		validationSchema: schema
+		//validationSchema: schema
 	});
 
   function onSubmit(data: any) {
