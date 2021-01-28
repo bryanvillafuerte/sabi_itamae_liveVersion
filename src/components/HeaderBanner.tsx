@@ -2,7 +2,7 @@ import React from 'react';
 import '../sass/header-banner.scss';
 import { Container, Row, Col, Image, Modal, Button, ResponsiveEmbed } from 'react-bootstrap/';
 import ScrollAnimation from 'react-animate-on-scroll';
-const ChefEdu = require('../images/DSC_7111.jpg');
+import ChefEdu from '../images/DSC_7111.jpg';
 
 function HeaderBanner() {
   const [modalShow, setModalShow] = React.useState(false);
